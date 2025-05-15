@@ -81,7 +81,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_a5RTITGbEfC-4Z9zH4y95A"/>
         <condition xmi:type="expression:Expression" xmi:id="_a5RTIjGbEfC-4Z9zH4y95A" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_9Wz_GzGTEfCkYdaGFVhtZg" documentation="This is an example of actor that is mapped to any ACME users" name="Técnico de área de operações" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_9Wz_GzGTEfCkYdaGFVhtZg" documentation="This is an example of actor that is mapped to any ACME users" name="Técnico de área de operações"/>
       <contract xmi:type="process:Contract" xmi:id="_9Wz_HDGTEfCkYdaGFVhtZg"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_9Wz_HTGTEfCkYdaGFVhtZg">
         <name xmi:type="expression:Expression" xmi:id="_9Wz_HjGTEfCkYdaGFVhtZg" content="" returnTypeFixed="true"/>
@@ -163,7 +163,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_5jKNkDGbEfC-4Z9zH4y95A"/>
         <condition xmi:type="expression:Expression" xmi:id="_5jKNkTGbEfC-4Z9zH4y95A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_pV0cQDGbEfC-4Z9zH4y95A" name="Técnico de área de operações" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_pV0cQDGbEfC-4Z9zH4y95A" name="Técnico de área de operações"/>
       <contract xmi:type="process:Contract" xmi:id="_eu2dkjGbEfC-4Z9zH4y95A"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_eu12gTGbEfC-4Z9zH4y95A">
         <name xmi:type="expression:Expression" xmi:id="_eu12gjGbEfC-4Z9zH4y95A" content="" returnTypeFixed="true"/>
@@ -358,7 +358,8 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_nYSGoTGdEfC-4Z9zH4y95A"/>
         <condition xmi:type="expression:Expression" xmi:id="_nYSGojGdEfC-4Z9zH4y95A" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_QG9VMDGdEfC-4Z9zH4y95A" name="Serviços administrativos"/>
+      <actors xmi:type="process:Actor" xmi:id="_QG9VMDGdEfC-4Z9zH4y95A" name="Serviços administrativos" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_2XLAcDGgEfCnSJk-yp4Knw" name="Técnico de área de operações"/>
       <contract xmi:type="process:Contract" xmi:id="_Hdk6FDGcEfC-4Z9zH4y95A"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_Hdk6ATGcEfC-4Z9zH4y95A">
         <name xmi:type="expression:Expression" xmi:id="_Hdk6AjGcEfC-4Z9zH4y95A" content="" returnTypeFixed="true"/>
