@@ -21,5 +21,15 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.Vendas">
+            <fields>
+                <field type="BOOLEAN" length="255" name="etiquetaP" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="identificacao" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="novaEtiquetaP" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
     </businessObjects>
 </businessObjectModel>

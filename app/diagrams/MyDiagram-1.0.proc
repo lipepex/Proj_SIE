@@ -7,15 +7,32 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_9Wz_CDGTEfCkYdaGFVhtZg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_9Wz_CTGTEfCkYdaGFVhtZg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_9Wz_CjGTEfCkYdaGFVhtZg" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_pJrqYE1KEfCIS7Qdd8ccrg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_pJrqYU1KEfCIS7Qdd8ccrg" name="vendas" content="vendas" type="TYPE_VARIABLE" returnType="com.company.model.Vendas">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pJrqYk1KEfCIS7Qdd8ccrg" name="vendas" dataType="_9Wz_NDGTEfCkYdaGFVhtZg" className="com.company.model.Vendas"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_pJrqY01KEfCIS7Qdd8ccrg" name="vendasInput.etiquetaP" content="vendasInput?.etiquetaP" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_pJrqZE1KEfCIS7Qdd8ccrg" name="vendasInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_pJrqZU1KEfCIS7Qdd8ccrg" type="JAVA_METHOD" expression="setEtiquetaP">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_9Wz_CzGTEfCkYdaGFVhtZg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_9Wz_DDGTEfCkYdaGFVhtZg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_9Wz_DTGTEfCkYdaGFVhtZg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_9Wz_DjGTEfCkYdaGFVhtZg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_9Wz_DzGTEfCkYdaGFVhtZg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_9Wz_EDGTEfCkYdaGFVhtZg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_OL-RYEyHEfCNq_Z_7Oph1Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_1P1j4E1KEfCIS7Qdd8ccrg" name="newForm12" content="eb291085-4ec8-4393-a0c5-59f9d3818a77" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_9Wz_EjGTEfCkYdaGFVhtZg"/>
+          <contract xmi:type="process:Contract" xmi:id="_9Wz_EjGTEfCkYdaGFVhtZg">
+            <inputs xmi:type="process:ContractInput" xmi:id="_pJqcQE1KEfCIS7Qdd8ccrg" name="vendasInput" type="COMPLEX" dataReference="vendas" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_pJqcQU1KEfCIS7Qdd8ccrg" name="etiquetaP" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_pJqcQk1KEfCIS7Qdd8ccrg" name="identificacao" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_pJqcQ01KEfCIS7Qdd8ccrg" name="novaEtiquetaP" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_9Wz_EzGTEfCkYdaGFVhtZg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:StartMessageEvent" xmi:id="_SNvGYDGbEfC-4Z9zH4y95A" name="Produto para entrega" outgoing="_S6TRcDGbEfC-4Z9zH4y95A" event="Msg" incomingMessag="_LodmkDyTEfCJUObNuNZMMQ">
@@ -27,6 +44,17 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_yBIt8TGYEfC-4Z9zH4y95A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_yBIt8DGYEfC-4Z9zH4y95A" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_yBIt8jGYEfC-4Z9zH4y95A" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_puKQek1KEfCIS7Qdd8ccrg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_puKQe01KEfCIS7Qdd8ccrg" name="vendas" content="vendas" type="TYPE_VARIABLE" returnType="com.company.model.Vendas">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_puKQfE1KEfCIS7Qdd8ccrg" name="vendas" dataType="_9Wz_NDGTEfCkYdaGFVhtZg" className="com.company.model.Vendas"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_puKQfU1KEfCIS7Qdd8ccrg" name="vendasInput.identificacao" content="vendasInput?.identificacao" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_puKQfk1KEfCIS7Qdd8ccrg" name="vendasInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_puKQf01KEfCIS7Qdd8ccrg" type="JAVA_METHOD" expression="setIdentificacao">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_yBIt8zGYEfC-4Z9zH4y95A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_yBIt9DGYEfC-4Z9zH4y95A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_yBIt9TGYEfC-4Z9zH4y95A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -35,13 +63,30 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_wjF7STGbEfC-4Z9zH4y95A">
             <targetForm xmi:type="expression:Expression" xmi:id="_OL-RYUyHEfCNq_Z_7Oph1Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_wjF7SDGbEfC-4Z9zH4y95A"/>
+          <contract xmi:type="process:Contract" xmi:id="_wjF7SDGbEfC-4Z9zH4y95A">
+            <inputs xmi:type="process:ContractInput" xmi:id="_puKQcE1KEfCIS7Qdd8ccrg" name="vendasInput" type="COMPLEX" dataReference="vendas" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_puKQcU1KEfCIS7Qdd8ccrg" name="etiquetaP" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_puKQck1KEfCIS7Qdd8ccrg" name="identificacao" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_puKQc01KEfCIS7Qdd8ccrg" name="novaEtiquetaP" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_wjF7SzGbEfC-4Z9zH4y95A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_w3bzkDGbEfC-4Z9zH4y95A" name="Acrescentar uma nova etiqueta &quot;P&quot;" outgoing="_a5RTIDGbEfC-4Z9zH4y95A" incoming="_WIo1sDGbEfC-4Z9zH4y95A" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WIoOojGbEfC-4Z9zH4y95A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WIoOoTGbEfC-4Z9zH4y95A" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WIoOozGbEfC-4Z9zH4y95A" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_qRHMkE1KEfCIS7Qdd8ccrg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_qRHMkU1KEfCIS7Qdd8ccrg" name="vendas" content="vendas" type="TYPE_VARIABLE" returnType="com.company.model.Vendas">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qRHMkk1KEfCIS7Qdd8ccrg" name="vendas" dataType="_9Wz_NDGTEfCkYdaGFVhtZg" className="com.company.model.Vendas"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_qRHMk01KEfCIS7Qdd8ccrg" name="vendasInput.novaEtiquetaP" content="vendasInput?.novaEtiquetaP" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_qRHMlE1KEfCIS7Qdd8ccrg" name="vendasInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_qRHMlU1KEfCIS7Qdd8ccrg" type="JAVA_METHOD" expression="setNovaEtiquetaP">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WIoOpDGbEfC-4Z9zH4y95A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_WIoOpTGbEfC-4Z9zH4y95A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_WIoOpjGbEfC-4Z9zH4y95A" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -50,7 +95,13 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_w3bzmjGbEfC-4Z9zH4y95A">
             <targetForm xmi:type="expression:Expression" xmi:id="_OL-RYkyHEfCNq_Z_7Oph1Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_w3bzmTGbEfC-4Z9zH4y95A"/>
+          <contract xmi:type="process:Contract" xmi:id="_w3bzmTGbEfC-4Z9zH4y95A">
+            <inputs xmi:type="process:ContractInput" xmi:id="_qRHMgE1KEfCIS7Qdd8ccrg" name="vendasInput" type="COMPLEX" dataReference="vendas" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_qRHMgU1KEfCIS7Qdd8ccrg" name="etiquetaP" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_qRHMgk1KEfCIS7Qdd8ccrg" name="identificacao" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_qRHMg01KEfCIS7Qdd8ccrg" name="novaEtiquetaP" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_w3bznDGbEfC-4Z9zH4y95A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_VW8eEDyTEfCJUObNuNZMMQ" name="Produto pronto para venda ao cliente" incoming="_a5RTIDGbEfC-4Z9zH4y95A">
@@ -59,6 +110,9 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_a5QsEjGbEfC-4Z9zH4y95A" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_nSLWME1KEfCIS7Qdd8ccrg" name="vendas" dataType="_9Wz_NDGTEfCkYdaGFVhtZg" className="com.company.model.Vendas">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_nSLWMU1KEfCIS7Qdd8ccrg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_9Wz_FDGTEfCkYdaGFVhtZg">
         <targetForm xmi:type="expression:Expression" xmi:id="_OL-RY0yHEfCNq_Z_7Oph1Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
