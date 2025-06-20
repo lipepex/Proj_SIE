@@ -1,10 +1,10 @@
 {
-  "id" : "newForm1",
-  "name" : "newForm1",
+  "id" : "1verificarEstado",
+  "name" : "1verificarEstado",
   "type" : "form",
-  "uuid" : "613953a5-134d-4024-853a-9a5b22be8a31",
+  "uuid" : "c4325f5f-7f3f-46b8-abe1-32eb81b99a57",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1748536411492,
+  "lastUpdate" : 1750438982615,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "83aed3e1-b13f-49cb-b169-fa3e5ad17889",
+        "reference" : "9de50a89-f60d-41ae-bfff-ceb4d57071c2",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "9db0d710-009e-4d14-9f9e-188fbf02e16a",
+              "reference" : "09b9febb-c43a-46a1-9d1f-66373962f084",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "e227da0c-c063-41eb-9565-5248b362b237",
+              "reference" : "120489f7-a668-4c6d-94bd-1ecb37e0c9c0",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -116,8 +116,17 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
-        "reference" : "5dcbb6f6-340c-4ff4-89e5-75d7ecec455c",
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "77e8a5b8-0916-4fff-8aaf-5cde1f511b83",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,51 +135,10 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "ef38f421-e345-488d-ae0e-1b03e80b909b",
+          "reference" : "036c2870-3de5-4c0e-93c5-9e871886fca9",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Encomendas"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "3fd7e1e3-5db9-492c-9d63-5a6207ed24b7",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
             [
               {
                 "type" : "container",
@@ -197,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9e2aba7a-1ba0-460a-bbf2-9c50b4015eb3",
+                "reference" : "4fb0ce01-61e7-47cf-9820-9e53431d43fc",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -229,7 +197,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Concordancia"
+                          "value" : "Aparência em aparente estado de conformidade"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -237,10 +205,18 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "encomendas.concordancia"
+                          "value" : "encomendas.aparencia"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
-                      "reference" : "ffda1083-30c6-4129-a328-734825cf03b6",
+                      "reference" : "14b434cd-d555-40b7-84f5-a40ff2e4636a",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -324,7 +300,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "185e14b4-063c-424d-a7fb-49f4127e98b5",
+                "reference" : "ee5d1cba-0ce1-4d15-a1de-87f54474cfc1",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -376,7 +352,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2a315634-29a1-42a2-8ce5-6db6c831965e",
+                "reference" : "9a656eb4-c23d-4af9-8129-e440ccd59d3a",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -417,7 +393,7 @@
         "\treturn {",
         "\t\t//map encomendas variable to expected task contract input",
         "\t\tencomendasInput: {",
-        "\t\t\tconcordancia: $data.encomendas.concordancia !== undefined ? $data.encomendas.concordancia : null",
+        "\t\t\taparencia: $data.encomendas.aparencia !== undefined ? $data.encomendas.aparencia : null",
         "\t\t}",
         "\t}",
         "}"
@@ -448,16 +424,16 @@
   },
   "assets" : [
     {
-      "id" : "bbf6993c-6204-4fd9-a830-0d922f98016e",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "2b58e1ef-6c3f-48ec-8910-0e7bc3c49569",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "307b0506-39be-4883-98c4-a0ad4e51e3fd",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "b126d416-5cbc-4453-8516-6e6de61e8d7d",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }

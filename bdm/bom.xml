@@ -5,6 +5,8 @@
             <description>Produtos para armazenamento</description>
             <fields>
                 <field type="INTEGER" length="255" name="id_produto" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="etiquetaS" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="armazenarStock" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

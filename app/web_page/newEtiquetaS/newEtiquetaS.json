@@ -1,10 +1,10 @@
 {
-  "id" : "EtiquetaForm",
-  "name" : "EtiquetaForm",
+  "id" : "newEtiquetaS",
+  "name" : "newEtiquetaS",
   "type" : "form",
-  "uuid" : "5e63e90d-cd8a-4395-99b1-63b07ce3566c",
+  "uuid" : "21c05006-f708-4289-8364-3a97f863c500",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1748532908880,
+  "lastUpdate" : 1750374809188,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "9bfdef98-d0ee-4b7b-b45f-ea93fe6a35bb",
+        "reference" : "c3036174-bb36-4cda-acde-d8ef9f23d285",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -51,13 +51,9 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
                 }
               },
-              "reference" : "66486361-1fa0-4501-9f16-3e320f22679f",
+              "reference" : "de67c9e1-9846-4533-b973-e70cb43bfb36",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -105,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "a25728c5-5055-4d95-8fab-bdf5013481da",
+              "reference" : "58a74bc9-098b-4d80-9289-3a61dfd33aae",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -121,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "cb516e87-f882-41d1-9f20-21771394fd6a",
+        "reference" : "8245d2d1-eb2d-420f-8ab2-5c47046fcb67",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -130,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "5d4664fe-8908-483d-af6a-d57760578179",
+          "reference" : "1a7494b5-2d53-4bde-975e-86b5ee78f683",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -169,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "15baef1d-f274-4a94-bcc6-6060923b3d58",
+                "reference" : "47b1d31d-156e-4ea6-8291-fc9d550f94aa",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -201,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e3b26a89-f2e2-4ddb-8d02-27eb3622ccb3",
+                "reference" : "0d392ecb-3ec4-41e7-ab2b-b5c9f4275348",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -223,32 +219,17 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "disabled" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Id_produto"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
+                          "value" : "Etiqueta S"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -256,42 +237,12 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "armazenamento.id_produto"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : "armazenamento.etiquetaS"
                         }
                       },
-                      "reference" : "784fc0ca-0335-4fec-b671-ef0dc98b150f",
+                      "reference" : "c959aea0-9b21-419d-bcf8-49574451edd9",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbCheckbox",
                       "description" : ""
                     }
                   ]
@@ -373,7 +324,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "1ae17742-dd14-4ee1-84bd-e7522b2029c5",
+                "reference" : "dff4bd7c-ff0b-4131-81f7-59c5349b8b23",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -425,7 +376,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "3c6cd415-0f8f-4877-99b9-438853e2c2e1",
+                "reference" : "0951478a-257e-48f0-a0ee-f94b01eb0d93",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -473,7 +424,9 @@
         "\treturn {",
         "\t\t//map armazenamento variable to expected task contract input",
         "\t\tarmazenamentoInput: {",
-        "\t\t\tid_produto: $data.armazenamento.id_produto !== undefined ? $data.armazenamento.id_produto : null",
+        "\t\t\tid_produto: $data.armazenamento.id_produto !== undefined ? $data.armazenamento.id_produto : null,",
+        "\t\t\tetiquetaS: $data.armazenamento.etiquetaS !== undefined ? $data.armazenamento.etiquetaS : null,",
+        "\t\t\tarmazenarStock: $data.armazenamento.armazenarStock !== undefined ? $data.armazenamento.armazenarStock : null",
         "\t\t}",
         "\t}",
         "}"
@@ -497,14 +450,14 @@
   },
   "assets" : [
     {
-      "id" : "9322f11f-e385-44e8-9748-79eb715bb406",
+      "id" : "7c26512a-4990-4d3e-bf52-c5731066fb96",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "e5dcddfd-4574-4157-a7b3-e8a241801569",
+      "id" : "a642e006-65e1-44a4-a9bf-b7e796793f1e",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,

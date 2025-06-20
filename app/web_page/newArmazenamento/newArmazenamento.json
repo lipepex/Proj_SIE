@@ -1,10 +1,10 @@
 {
-  "id" : "ArmazenarForm",
-  "name" : "ArmazenarForm",
+  "id" : "newArmazenamento",
+  "name" : "newArmazenamento",
   "type" : "form",
-  "uuid" : "6258f882-71fc-40aa-a65b-80600bc9a28f",
+  "uuid" : "d73a71cc-c739-48c0-b837-aac2628c3b42",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1748533009218,
+  "lastUpdate" : 1750374848876,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "bf123d7d-684c-4c48-82ca-57c1d99f1b68",
+        "reference" : "0d6cbfff-1f40-459d-844a-a109555572d7",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "09713711-af3d-4ab9-bd6d-1e34a2c2aa80",
+              "reference" : "3b0c9a69-7c34-45ff-8248-65627e1fafff",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "80ce5468-ec37-4a03-a498-ffff0560bfe7",
+              "reference" : "686d5059-68f0-4245-8651-4bbc6ef876fe",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d1a2f89f-16e1-4e36-a5f8-c63d42d70f0b",
+        "reference" : "4b8f36ae-3315-492b-8c3c-7894631db637",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "e7c9afcd-6c83-4f2f-8ef2-67427a5c63d6",
+          "reference" : "383865f5-ba09-4a30-a8e6-6ad8b25e5e31",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -165,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2ba3de63-aba3-4a7d-a604-917e517f5352",
+                "reference" : "68062c7c-9cf6-400e-9e7a-8dcf6ee3e311",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -197,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "1f6678db-0d65-4c12-9aae-1d16cece7d6e",
+                "reference" : "e3437406-7fc8-436a-93dd-d1501997fa92",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -219,32 +219,17 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "disabled" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Id_produto"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
+                          "value" : "Armazenar Stock"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -252,42 +237,12 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "armazenamento.id_produto"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : "armazenamento.armazenarStock"
                         }
                       },
-                      "reference" : "3ac48ff0-037e-45fc-907d-201e81b4d257",
+                      "reference" : "f42a622c-3c4b-490e-82fe-f4ce8163e9c9",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbCheckbox",
                       "description" : ""
                     }
                   ]
@@ -369,7 +324,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "935158bc-dce3-4d8c-8f65-0b19e73c4798",
+                "reference" : "4712400d-8920-402f-a1f7-e77f4a6bedba",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -421,7 +376,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2022d8d5-e717-4c94-986e-c2d1f08da973",
+                "reference" : "56eb2924-2f3a-4358-b21c-2b877beab7bc",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -469,7 +424,9 @@
         "\treturn {",
         "\t\t//map armazenamento variable to expected task contract input",
         "\t\tarmazenamentoInput: {",
-        "\t\t\tid_produto: $data.armazenamento.id_produto !== undefined ? $data.armazenamento.id_produto : null",
+        "\t\t\tid_produto: $data.armazenamento.id_produto !== undefined ? $data.armazenamento.id_produto : null,",
+        "\t\t\tetiquetaS: $data.armazenamento.etiquetaS !== undefined ? $data.armazenamento.etiquetaS : null,",
+        "\t\t\tarmazenarStock: $data.armazenamento.armazenarStock !== undefined ? $data.armazenamento.armazenarStock : null",
         "\t\t}",
         "\t}",
         "}"
@@ -493,14 +450,14 @@
   },
   "assets" : [
     {
-      "id" : "28fbe557-f369-40e7-9fa7-86f7d28d1059",
+      "id" : "025644f8-1515-4e19-8319-e5177805a9dc",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "977064d5-4748-45ae-8abe-643c85850508",
+      "id" : "0fa17431-b442-4980-b7b8-46572c5df06d",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
