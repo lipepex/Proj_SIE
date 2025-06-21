@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "f30e0b1b-24f1-493c-b0b8-24e7a6b33685",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1749137484892,
+  "lastUpdate" : 1750537580271,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -42,7 +42,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
+                  "value" : "{{ task.displayName }} da encomenda nº{{var_id_encomenda.value}}"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -51,6 +51,10 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
                 }
               },
               "reference" : "1026488c-c153-4ac3-83eb-55dfe6d999e3",
@@ -311,6 +315,13 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "var_id_encomenda" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/var_id_encomenda"
       ],
       "exposed" : false
     }

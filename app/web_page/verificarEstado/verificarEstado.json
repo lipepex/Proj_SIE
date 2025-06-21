@@ -1,12 +1,119 @@
 {
-  "id" : "InstatiationFormVerificacao",
-  "name" : "InstatiationFormVerificacao",
+  "id" : "verificarEstado",
+  "name" : "verificarEstado",
   "type" : "form",
-  "uuid" : "93ee8599-b36e-4b1f-a23d-b5c352bb6c93",
+  "uuid" : "c4325f5f-7f3f-46b8-abe1-32eb81b99a57",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750537410716,
+  "lastUpdate" : 1750537572407,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "9de50a89-f60d-41ae-bfff-ceb4d57071c2",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayName }} nº{{var_id_encomenda.value}}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "09b9febb-c43a-46a1-9d1f-66373962f084",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "120489f7-a668-4c6d-94bd-1ecb37e0c9c0",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
     [
       {
         "type" : "formContainer",
@@ -23,7 +130,7 @@
             "value" : false
           }
         },
-        "reference" : "2874487b-a522-4357-b31c-32e11899606e",
+        "reference" : "77e8a5b8-0916-4fff-8aaf-5cde1f511b83",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -32,13 +139,13 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "73ef9239-6453-4ea9-98bc-f7cdbb93eb5b",
+          "reference" : "036c2870-3de5-4c0e-93c5-9e871886fca9",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
             [
               {
-                "type" : "component",
+                "type" : "container",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
@@ -46,64 +153,23 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Verificação e organização dos produtos recebidos"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
                   }
                 },
-                "reference" : "8bd32986-f183-46c9-9525-b1ec17d7f7ee",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  }
-                },
-                "reference" : "cb7db6bf-3b9c-447f-b34e-ea7efd3f25c5",
+                "reference" : "4fb0ce01-61e7-47cf-9820-9e53431d43fc",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -111,52 +177,53 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
                         "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "hidden" : {
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Aparência em aparente estado de conformidade"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "encomendas.aparencia"
+                        },
+                        "required" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Default label"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Clique em \"Iniciar\" para começar o processo de verificação e organização dos produtos recebidos"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
                         }
                       },
-                      "reference" : "10e03d7f-667a-4e22-846d-219b2c9b6432",
+                      "reference" : "14b434cd-d555-40b7-84f5-a40ff2e4636a",
                       "hasValidationError" : false,
-                      "id" : "pbText"
+                      "id" : "pbCheckbox",
+                      "description" : ""
                     }
                   ]
                 ]
@@ -189,7 +256,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Iniciar"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -216,7 +283,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Start process"
+                    "value" : "Submit task"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -258,7 +325,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "c8cce6ac-7a91-4b31-9cab-d71cbaba33bc",
+                "reference" : "ee5d1cba-0ce1-4d15-a1de-87f54474cfc1",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -310,7 +377,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "dec3a8ae-2ad4-44b4-bf16-c26b43ef2d33",
+                "reference" : "9a656eb4-c23d-4af9-8129-e440ccd59d3a",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -322,20 +389,10 @@
     ]
   ],
   "variables" : {
-    "formInput" : {
-      "type" : "json",
+    "task" : {
+      "type" : "url",
       "value" : [
-        "{\r",
-        "  \"encomendasInput\" : {\r",
-        "    \"concordancia\" : false,\r",
-        "    \"aparencia\" : false,\r",
-        "    \"quantidade\" : false,\r",
-        "    \"destino\" : false\r",
-        "  },\r",
-        "  \"armazenamentoInput\" : {\r",
-        "    \"id_produto\" : 0\r",
-        "  }\r",
-        "}"
+        "../API/bpm/userTask/{{taskId}}"
       ],
       "exposed" : false
     },
@@ -357,26 +414,58 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tencomendasInput: $data.formInput.encomendasInput,",
-        "\tarmazenamentoInput: $data.formInput.armazenamentoInput",
+        "if( $data.encomendas ){",
+        "\treturn {",
+        "\t\t//map encomendas variable to expected task contract input",
+        "\t\tencomendasInput: {",
+        "\t\t\taparencia: $data.encomendas.aparencia !== undefined ? $data.encomendas.aparencia : null",
+        "\t\t}",
+        "\t}",
         "}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "encomendas" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.encomendas_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "var_id_encomenda" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/var_id_encomenda"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "271900c0-0fd3-47cc-8358-3bbd32a6840d",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "2b58e1ef-6c3f-48ec-8910-0e7bc3c49569",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "c8dffd4f-dae0-4c9d-9cdb-2bbf0bcfa26b",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "b126d416-5cbc-4453-8516-6e6de61e8d7d",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
